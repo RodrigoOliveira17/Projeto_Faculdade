@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #ff69b4;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo h1 {
+    color: white;
+    margin-bottom: 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #ff69b4;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.home {
+    text-align: center;
+    padding: 50px;
+}
+
+.produtos {
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.produto {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.produto img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.produto h3 {
+    margin: 10px 0;
+}
+
+.produto button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.produto button:hover {
+    background-color: #ff1493;
+}
+
+.entrar, .comprar {
+    text-align: center;
+    padding: 50px;
+}
+
+.entrar form, .comprar .produto-selecionado {
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.entrar label, .comprar label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.entrar input, .comprar input, .comprar select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.entrar button, .comprar button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.entrar button:hover, .comprar button:hover {
+    background-color: #ff1493;
+}
+
+.comprar img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.comprar .produto-selecionado p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.comprar .produto-selecionado button {
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff69b4;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos gerais index.html */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 105, 180, 0.8);
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.carrinho-link {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos do Parallax */
+.parallax {
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 36px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+
+.parallax::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -1;
+}
+
+.parallax1::before {
+    background-image: url('img/image2.jpg'); 
+}
+
+.parallax2::before {
+    background-image: url('img/image3.jpg'); 
+}
+
+.parallax3::before {
+    background-image: url('img/image4.jpg'); 
+}
+
+.parallax-content {
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para o footer */
+footer {
+    background-color: rgba(255, 105, 180, 0.9);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .parallax {
+        font-size: 24px;
+    }
+}
+
+/* Barra rosa "Nossos Produtos". produtos.html */
+.barra-rosa {
+    background-color: #ff69b4; /* Rosa */
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilo do Filtro */
+.filtro {
+    width: 20%;
+    float: left;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-right: 1px solid #ddd;
+}
+
+.filtro h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.filtro ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.filtro ul li {
+    margin-bottom: 8px;
+}
+
+.filtro label {
+    margin-left: 8px;
+}
+
+/* Estilo dos Produtos */
+.produtos-container {
+    width: 75%;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.produto-item {
+    width: 30%; 
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.produto-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.produto-item h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.produto-item button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.produto-item button:hover {
+    background-color: #ff85c4;
+}
+
+/* Estilo para o footer */
+footer {
+    clear: both;
+    background-color: rgba(255, 105, 180, 0.9);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .produto-item {
+        width: 100%; /* Um produto por linha em telas menores */
+    }
+    .filtro {
+        width: 100%;
+        border: none;
+    }
+    .produtos-container {
+        width: 100%;
+    }
+}
+

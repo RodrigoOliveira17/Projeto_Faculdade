@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cup Delícia - Comprar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Cup Delícia</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="entrar.html">Entrar/Cadastrar</a></li>
+                <li><a href="comprar.html">Comprar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="comprar">
+        <h2>Finalizar Compra</h2>
+        <div class="produto-selecionado">
+            <img src="cupcake1.jpg" alt="Cupcake Selecionado">
+            <p>Descrição: Cupcake Delicioso de Morango</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" value="1" min="1"><br>
+
+            <label for="pagamento">Forma de pagamento:</label>
+            <select id="pagamento">
+                <option value="cartao">Cartão de Crédito</option>
+                <option value="boleto">Boleto Bancário</option>
+            </select><br>
+
+            <p>Valor Total: R$ 15,00</p>
+            <button>Confirmar</button>
+            <button>Cancelar</button>
+        </div>
+    </section>
+
+    <div id="modal-compra" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Confirmação de Compra</h2>
+            <p>Tem certeza de que deseja finalizar a compra?</p>
+            <button id="confirmar-compra">Confirmar</button>
+            <button id="cancelar-compra">Cancelar</button>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

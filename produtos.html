@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Cup Delícia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Cup Delícia</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="entrar.html">Entrar/Cadastrar</a></li>
+                <li><a href="comprar.html">Comprar</a></li>
+            </ul>
+            <a href="carrinho.html" class="carrinho-link">
+                🛒 Carrinho (<span id="carrinho-contador">0</span>)
+            </a>
+        </nav>
+    </header>
+
+    <!-- Barra rosa "Nossos Produtos" -->
+    <section class="barra-rosa">
+        <h2>Nossos Produtos</h2>
+    </section>
+
+    <main>
+        <!-- Filtro de sabores -->
+        <aside class="filtro">
+            <h3>Filtrar por sabores</h3>
+            <ul>
+                <li><input type="checkbox" id="cenoura"><label for="cenoura">Cenoura</label></li>
+                <li><input type="checkbox" id="ovomaltine"><label for="ovomaltine">Ovomaltine</label></li>
+                <li><input type="checkbox" id="limao"><label for="limao">Limão</label></li>
+                <li><input type="checkbox" id="redvelvet"><label for="redvelvet">Red Velvet</label></li>
+                <li><input type="checkbox" id="morango"><label for="morango">Morango</label></li>
+                <li><input type="checkbox" id="chocolate"><label for="chocolate">Chocolate</label></li>
+                <li><input type="checkbox" id="brigadeiro_morango"><label for="brigadeiro_morango">Brigadeiro com Morango</label></li>
+                <li><input type="checkbox" id="brigadeiro"><label for="brigadeiro">Brigadeiro</label></li>
+                <li><input type="checkbox" id="beijinho"><label for="beijinho">Beijinho</label></li>
+                <li><input type="checkbox" id="casadinho"><label for="casadinho">Casadinho</label></li>
+                <li><input type="checkbox" id="leiteninho"><label for="leiteninho">Leite Ninho</label></li>
+            </ul>
+        </aside>
+
+        <!-- Produtos -->
+        <section class="produtos-container">
+            <div class="produto-item">
+                <img src="img/cupcake1.jpg" alt="Cupcake de Cenoura">
+                <h4>Cupcake de Cenoura</h4>
+                <button>Detalhes</button>
+                <button>Comprar</button>
+            </div>
+            <div class="produto-item">
+                <img src="img/cupcake2.jpg" alt="Cupcake de Ovomaltine">
+                <h4>Cupcake de Ovomaltine</h4>
+                <button>Detalhes</button>
+                <button>Comprar</button>
+            </div>
+            
+            <div class="produto-item">
+                <img src="img/cupcake3.jpg" alt="Cupcake de Limão">
+                <h4>Cupcake de Limão</h4>
+                <button>Detalhes</button>
+                <button>Comprar</button>
+            </div>
+            
+            <div class="produto-item">
+                <img src="img/cupcake1.jpg" alt="Cupcake de Cenoura">
+                <h4>Cupcake de Cenoura</h4>
+                <button>Detalhes</button>
+                <button>Comprar</button>
+            </div>
+            <div class="produto-item">
+                <img src="img/cupcake2.jpg" alt="Cupcake de Ovomaltine">
+                <h4>Cupcake de Ovomaltine</h4>
+                <button>Detalhes</button>
+                <button>Comprar</button>
+            </div>
+            <div class="produto-item">
+                <img src="img/cupcake3.jpg" alt="Cupcake de Limão">
+                <h4>Cupcake de Limão</h4>
+                <button>Detalhes</button>
+                <button>Comprar</button>
+            </div>
+
+
+
+
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Endereço: Rua Fictícia, 123 - Telefone: (11) 1234-5678</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
