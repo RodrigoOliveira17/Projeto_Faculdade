@@ -58,3 +58,7 @@ btnConfirmar.addEventListener('click', function() {
     modal.style.display = 'none';
 });
 
+// comprar.html
+function voltarInicio() {
+    window.location.href = "index.html";
+}

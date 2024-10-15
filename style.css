@@ -387,7 +387,7 @@ footer {
 /* Responsividade */
 @media (max-width: 768px) {
     .produto-item {
-        width: 100%; /* Um produto por linha em telas menores */
+        width: 100%; 
     }
     .filtro {
         width: 100%;
@@ -397,4 +397,152 @@ footer {
         width: 100%;
     }
 }
+
+
+/* comprar. html */
+button {
+    background-color: #ff6347; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    margin: 10px; 
+}
+
+/* Estilo ao passar o mouse sobre os botões */
+button:hover {
+    background-color: #ff4500; 
+}
+
+/* Estilo do botão Cancelar */
+#cancelar-compra {
+    background-color: #ccc; 
+    color: black; 
+}
+
+/* Estilo ao passar o mouse sobre o botão Cancelar */
+#cancelar-compra:hover {
+    background-color: #999; 
+}
+
+/* Centralização do conteúdo */
+.produto-compra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.produto-compra img {
+    max-width: 100%;
+    height: auto;
+}
+
+.produto-compra h3, .produto-compra p {
+    text-align: center;
+}
+
+/* Contêiner para organizar as seções */
+.selecao-compra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Estilo de cada campo (Quantidade e Pagamento) */
+.campo-selecao {
+    display: flex;
+    flex-direction: column;
+    width: 45%; 
+}
+
+/* Estilo do rótulo (label) */
+.campo-selecao label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo do seletor (select) */
+.campo-selecao select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Quando passar o mouse no select */
+.campo-selecao select:hover {
+    border-color: #ff6347; 
+}
+
+.campo-selecao select:focus {
+    border-color: #ff6347; 
+    outline: none;
+}
+
+
+/* Contêiner para organizar as seções */
+.selecao-compra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+    
+    border: 4px double #ff6347; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Estilo de cada campo (Quantidade e Pagamento) */
+.campo-selecao {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+/* Estilo do rótulo (label) */
+.campo-selecao label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo do seletor (select) */
+.campo-selecao select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out; 
+}
+
+/* Quando passar o mouse no select */
+.campo-selecao select:hover {
+    border-color: #ff6347; 
+}
+
+.campo-selecao select:focus {
+    border-color: #ff6347;
+    outline: none;
+}
+
 

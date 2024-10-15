@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cup Delícia - Comprar</title>
+    <title>Comprar - Cup Delícia</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,37 +21,46 @@
         </nav>
     </header>
 
-    <section class="comprar">
+    <main>
         <h2>Finalizar Compra</h2>
-        <div class="produto-selecionado">
-            <img src="cupcake1.jpg" alt="Cupcake Selecionado">
-            <p>Descrição: Cupcake Delicioso de Morango</p>
-            <label for="quantidade">Quantidade:</label>
-            <input type="number" id="quantidade" value="1" min="1"><br>
-
-            <label for="pagamento">Forma de pagamento:</label>
-            <select id="pagamento">
-                <option value="cartao">Cartão de Crédito</option>
-                <option value="boleto">Boleto Bancário</option>
-            </select><br>
-
-            <p>Valor Total: R$ 15,00</p>
-            <button>Confirmar</button>
-            <button>Cancelar</button>
+    
+        <div class="produto-compra">
+            <img src="img/cupcake-selecionado.jpg" alt="Cupcake">
+            <h3>Nome do Produto</h3>
+            <p>Descrição do produto selecionado.</p>
+    
+            <div class="selecao-compra">
+                <div class="campo-selecao">
+                    <label for="quantidade">Quantidade:</label>
+                    <select id="quantidade">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+            
+                <div class="campo-selecao">
+                    <label for="pagamento">Pagamento:</label>
+                    <select id="pagamento">
+                        <option value="cartao">Cartão de Crédito</option>
+                        <option value="boleto">Boleto</option>
+                        <option value="pix">Pix</option>
+                    </select>
+                </div>
+            </div>
+            
+    
+            <p>Valor total: R$ <span id="valor-total">10,00</span></p>
+    
+            <div class="botoes">
+                <button id="confirmar-compra">Confirmar</button>
+                <button id="cancelar-compra" onclick="voltarInicio()">Cancelar</button>
+            </div>
         </div>
-    </section>
-
-    <div id="modal-compra" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Confirmação de Compra</h2>
-            <p>Tem certeza de que deseja finalizar a compra?</p>
-            <button id="confirmar-compra">Confirmar</button>
-            <button id="cancelar-compra">Cancelar</button>
-        </div>
-    </div>
+    </main>
     
 
     <script src="script.js"></script>
 </body>
 </html>
+
