@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comprar - Cup Delícia</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -25,10 +30,10 @@
         <h2>Finalizar Compra</h2>
     
         <div class="produto-compra">
-            <img src="img/cupcake-selecionado.jpg" alt="Cupcake">
-            <h3>Nome do Produto</h3>
-            <p>Descrição do produto selecionado.</p>
-    
+            <img src="img/image2.jpg" alt="Cupcake">
+            <h3>CupCake de Chocolate</h3>
+            <p>Produto com sabor iniqualavel, feito com chocolate selecionado.</p>
+        
             <div class="selecao-compra">
                 <div class="campo-selecao">
                     <label for="quantidade">Quantidade:</label>
@@ -36,9 +41,14 @@
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
+                        <option value="3">4</option>
+                        <option value="3">5</option>
+                        <option value="3">6</option>
+                        <option value="3">7</option>
+                        <option value="3">8</option>
                     </select>
                 </div>
-            
+        
                 <div class="campo-selecao">
                     <label for="pagamento">Pagamento:</label>
                     <select id="pagamento">
@@ -48,19 +58,21 @@
                     </select>
                 </div>
             </div>
-            
-    
+        
             <p>Valor total: R$ <span id="valor-total">10,00</span></p>
-    
+            <h3>Deseja confirmar sua compra?</h3>
+
             <div class="botoes">
-                <button id="confirmar-compra">Confirmar</button>
-                <button id="cancelar-compra" onclick="voltarInicio()">Cancelar</button>
+                <button id="confirmar-compra" onclick="window.location.href='confirmacao.html';">Confirmar</button>
+
+                <button id="cancelar-compra" onclick="window.location.href='index.html';">Cancelar</button>
+
             </div>
+        
         </div>
     </main>
-    
-
     <script src="script.js"></script>
 </body>
 </html>
+
 

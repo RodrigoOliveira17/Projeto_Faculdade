@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Compra - Cup Delícia</title>
+    <link rel="stylesheet" href="confirmacao.css">
+</head>
+<body>
+    <div class="container">
+        <div class="mensagem">
+            <h2>Compra efetuada com sucesso</h2>
+            <p><strong>Endereço:</strong> Rua fictícia</p>
+            <p><strong>Cidade:</strong> Fictícia</p>
+            <p><strong>Número:</strong> Fictícia</p>
+            <p><strong>Previsão de entrega:</strong> xx/xx/xxxx</p>
+            <button id="voltar-inicio">Voltar</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Cup Delícia - Apaixone-se pelo Sabor</p>
+    </footer>
+
+    <script>
+        document.getElementById('voltar-inicio').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

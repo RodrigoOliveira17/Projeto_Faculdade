@@ -24,76 +24,72 @@
         </nav>
     </header>
 
-    <!-- Barra rosa "Nossos Produtos" -->
+    
     <section class="barra-rosa">
         <h2>Nossos Produtos</h2>
     </section>
 
     <main>
-        <!-- Filtro de sabores -->
+        
         <aside class="filtro">
             <h3>Filtrar por sabores</h3>
             <ul>
-                <li><input type="checkbox" id="cenoura"><label for="cenoura">Cenoura</label></li>
-                <li><input type="checkbox" id="ovomaltine"><label for="ovomaltine">Ovomaltine</label></li>
-                <li><input type="checkbox" id="limao"><label for="limao">Limão</label></li>
-                <li><input type="checkbox" id="redvelvet"><label for="redvelvet">Red Velvet</label></li>
-                <li><input type="checkbox" id="morango"><label for="morango">Morango</label></li>
-                <li><input type="checkbox" id="chocolate"><label for="chocolate">Chocolate</label></li>
-                <li><input type="checkbox" id="brigadeiro_morango"><label for="brigadeiro_morango">Brigadeiro com Morango</label></li>
-                <li><input type="checkbox" id="brigadeiro"><label for="brigadeiro">Brigadeiro</label></li>
-                <li><input type="checkbox" id="beijinho"><label for="beijinho">Beijinho</label></li>
-                <li><input type="checkbox" id="casadinho"><label for="casadinho">Casadinho</label></li>
-                <li><input type="checkbox" id="leiteninho"><label for="leiteninho">Leite Ninho</label></li>
+                <li><input type="checkbox" id="cenoura" onchange="filtrarProdutos()"><label for="cenoura">Cenoura</label></li>
+                <li><input type="checkbox" id="ovomaltine" onchange="filtrarProdutos()"><label for="ovomaltine">Ovomaltine</label></li>
+                <li><input type="checkbox" id="limao" onchange="filtrarProdutos()"><label for="limao">Limão</label></li>
+                <li><input type="checkbox" id="redvelvet" onchange="filtrarProdutos()"><label for="redvelvet">Red Velvet</label></li>
+                <li><input type="checkbox" id="morango" onchange="filtrarProdutos()"><label for="morango">Morango</label></li>
+                <li><input type="checkbox" id="chocolate" onchange="filtrarProdutos()"><label for="chocolate">Chocolate</label></li>
+                <li><input type="checkbox" id="brigadeiro_morango" onchange="filtrarProdutos()"><label for="brigadeiro_morango">Brigadeiro com Morango</label></li>
+                <li><input type="checkbox" id="brigadeiro" onchange="filtrarProdutos()"><label for="brigadeiro">Brigadeiro</label></li>
+                <li><input type="checkbox" id="beijinho" onchange="filtrarProdutos()"><label for="beijinho">Beijinho</label></li>
+                <li><input type="checkbox" id="casadinho" onchange="filtrarProdutos()"><label for="casadinho">Casadinho</label></li>
+                <li><input type="checkbox" id="leiteninho" onchange="filtrarProdutos()"><label for="leiteninho">Leite Ninho</label></li>
             </ul>
         </aside>
 
-        <!-- Produtos -->
+        
         <section class="produtos-container">
-            <div class="produto-item">
-                <img src="img/cupcake1.jpg" alt="Cupcake de Cenoura">
+            <div class="produto-item cenoura">
+                <img src="img/image2.jpg" alt="Cupcake de Cenoura">
                 <h4>Cupcake de Cenoura</h4>
                 <button>Detalhes</button>
-                <button>Comprar</button>
+                <button onclick="window.location.href='comprar.html';">Comprar</button>
             </div>
-            <div class="produto-item">
-                <img src="img/cupcake2.jpg" alt="Cupcake de Ovomaltine">
+            <div class="produto-item ovomaltine">
+                <img src="img/image3.jpg" alt="Cupcake de Ovomaltine">
                 <h4>Cupcake de Ovomaltine</h4>
                 <button>Detalhes</button>
-                <button>Comprar</button>
+                <button onclick="window.location.href='comprar.html';">Comprar</button>
             </div>
             
-            <div class="produto-item">
-                <img src="img/cupcake3.jpg" alt="Cupcake de Limão">
+            <div class="produto-item limao">
+                <img src="img/image4.jpg" alt="Cupcake de Limão">
                 <h4>Cupcake de Limão</h4>
                 <button>Detalhes</button>
-                <button>Comprar</button>
+                <button onclick="window.location.href='comprar.html';">Comprar</button>
             </div>
             
-            <div class="produto-item">
-                <img src="img/cupcake1.jpg" alt="Cupcake de Cenoura">
+            <div class="produto-item morango">
+                <img src="img/image2.jpg" alt="Cupcake de Morango">
                 <h4>Cupcake de Morango</h4>
                 <button>Detalhes</button>
-                <button>Comprar</button>
+                <button onclick="window.location.href='comprar.html';">Comprar</button>
             </div>
-            <div class="produto-item">
-                <img src="img/cupcake2.jpg" alt="Cupcake de Ovomaltine">
+            <div class="produto-item chocolate">
+                <img src="img/image3.jpg" alt="Cupcake de Chocolate">
                 <h4>Cupcake de Chocolate</h4>
                 <button>Detalhes</button>
-                <button>Comprar</button>
+                <button onclick="window.location.href='comprar.html';">Comprar</button>
             </div>
-            <div class="produto-item">
-                <img src="img/cupcake3.jpg" alt="Cupcake de Limão">
+            <div class="produto-item brigadeiro">
+                <img src="img/image4.jpg" alt="Cupcake de Brigadeiro">
                 <h4>Cupcake de Brigadeiro</h4>
                 <button>Detalhes</button>
-                <button>Comprar</button>
+                <button onclick="window.location.href='comprar.html';">Comprar</button>
             </div>
-
-
-
-
-
         </section>
+        
     </main>
 
     <footer>

@@ -545,4 +545,66 @@ button:hover {
     outline: none;
 }
 
+/*produtos.html*/
+
+.produto-item {
+    display: inline-block;
+    margin: 20px;
+    width: 30%;
+}
+
+.produto-item.hidden {
+    display: none;
+}
+
+.filtro {
+    width: 200px;
+    float: left;
+}
+.produtos {
+    display: inline-block;
+    width: 75%;
+}
+
+/*comprar.html*/
+
+.hidden {
+    display: none;
+}
+
+.confirmacao-container {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    border: 2px solid #4CAF50;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.confirmacao-container h2 {
+    color: #4CAF50;
+    font-size: 24px;
+}
+
+.confirmacao-container p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.botoes button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+ 
+
+
 

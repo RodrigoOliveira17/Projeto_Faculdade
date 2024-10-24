@@ -62,3 +62,67 @@ btnConfirmar.addEventListener('click', function() {
 function voltarInicio() {
     window.location.href = "index.html";
 }
+
+
+// comprar.html
+
+console.log("Script carregado");
+
+document.addEventListener('DOMContentLoaded', function() {
+    
+    document.getElementById('confirmar-compra').addEventListener('click', function() {
+        
+        document.querySelector('.produto-compra').classList.add('hidden');
+        
+        
+        document.querySelector('.confirmacao-container').classList.remove('hidden');
+    });
+
+    
+    document.getElementById('cancelar-compra').addEventListener('click', function() {
+        
+        window.location.href = 'index.html';
+    });
+});
+
+
+
+
+
+
+
+
+
+// produtos.html
+
+function filtrarProdutos() {
+    
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+    
+    let saboresSelecionados = [];
+    checkboxes.forEach((checkbox) => {
+        saboresSelecionados.push(checkbox.id);
+    });
+
+    const produtos = document.querySelectorAll('.produto-item');
+
+
+    produtos.forEach((produto) => {
+    
+        let deveMostrar = saboresSelecionados.some((sabor) => produto.classList.contains(sabor));
+
+    
+        if (saboresSelecionados.length === 0 || deveMostrar) {
+            produto.classList.remove('hidden');
+        } else {
+            produto.classList.add('hidden');
+        }
+    });
+}
+
+
+
+
+
+
+
